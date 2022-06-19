@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
+  <div class="Somente-para-deixar-bonito">
+
+
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="radios">nome do campo <h11>*</h11></label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0" >
+            <input name="nome do campo radio" id="sexo" value="valor 1" type="radio" required>
+            valor 1
+          </label> 
+          <label class="radio-inline" for="radios-1">
+            <input name="nome do campo radio" id="sexo" value="valor 2" type="radio">
+            valor 2
+          </label>
+          <label class="radio-inline" for="radios-0">
+            <input name="nome do campo radio" id="sexo" value="valor 3" type="radio">
+            valor 3
+          </label>
+        </div>
+      </label>
+    </div>
+  
+    <div class="form-group">
+                        
+      <label class="col-md-2 control-label" for="selectbasic"> Nome do campo <h11>*</h11></label>
+      
+      <div class="col-md-3">
+        <select required id="nome-do-campo-select" name="nome-do-campo-select" class="form-control">
+        <option value="nome do campo que aparece primiero e pode ser vazio">nome do campo que aparece primeiro e pode ser vazio</option>
+          <option value="Google">Google</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Indicação de Profissionais da área">Indicação de Profissionais da área</option>
+          <option value="Indicação de Amigos ">Indicação de Amigos</option>
+          <option value="Jornal">Jornal</option>
+          <option value="Rádio">Rádio</option>
+        </select>
+      </div>
+    </div>
+  
+    <button onclick="somenteParaMostrar()"> clique aki</button>
+
+  </div>
+
+
+
+  <script>
+     function somenteParaMostrar(){
+
+       //Para pegar o valor de um input do tipo radio:
+       const $nome_da_coluna_no_banco_de_dados =document.querySelector('input[name="nome do campo radio"]:checked').value
+
+
+       //para pegar valor do input do tipo Select
+
+       const $inputSelect = document.getElementById("nome-do-campo-select");
+       const $valorInputSelect = $inputSelect.options[$inputSelect.selectedIndex].value;
+
+       console.log($nome_da_coluna_no_banco_de_dados)
+       console.log($valorInputSelect)
+    }
+
+
+
+  </script>
+
+</body>
+</html>

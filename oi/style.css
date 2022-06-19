@@ -1,0 +1,15 @@
+.Somente-para-deixar-bonito{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  width: 100px ;
+  height: 100px;
+  margin: 0;
+  border: 0;
+  margin-left: 500px;
+}
+button:hover{
+  background-color: blue;
+}

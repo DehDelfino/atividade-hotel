@@ -1,6 +1,6 @@
 # MyMind, 
 
-### Uma aplicação desebvolvida ao longo do 2° e 3° periodos do curso de Engenharia de Software
+### É uma aplicação desenvolvida ao longo do 2° e 3° períodos do curso de Engenharia de Software
 </br>
 
 # indice:

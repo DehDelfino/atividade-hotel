@@ -17,7 +17,7 @@
    * [Diagrama do banco de dados](#Diagrama-do-banco-de-dados)
    * [Product Backlog Building](#Product-Backlog-Building)
    * [Use story](#Use-story)
- - [Desenvolvedore]
+ - [Desenvolvedore](#Desenvolvedores)
 
 
 # Tecnologias utilizadas 

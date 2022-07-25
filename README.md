@@ -95,9 +95,9 @@ Promovendo facilitar o encontro entre psicólogos e pacientes, MyMind permitirá
 
 # Desenvolvedores
 * [André Delfino](#https://github.com/DehDelfino)
-* [Fernando Dias](#https://github.com/FernandoDias18))
-* [Giulia Carvalho](#https://github.com/GiuliaCarvalhoS))
-* [Lucas Eskudlark](#https://github.com/LucasEskudlark))
+* [Fernando Dias](#https://github.com/FernandoDias18)
+* [Giulia Carvalho](#https://github.com/GiuliaCarvalhoS)
+* [Lucas Eskudlark](#https://github.com/LucasEskudlark)
 
 
 

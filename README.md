@@ -5,9 +5,19 @@
 
 # indice:
 - [Tecnologias](#Tecnologias-utilizadas)
-
-- [Justificativa do projeto](#-Justificativa-do-projeto)
+- [Justificativa do projeto](#Justificativa-do-projeto)
 - [Beneficios](#Beneficios)
+- [MODELAGEM DO SISTEMA](#MODELAGEM-DO-SISTEMA)
+   * [Modelo de Domínio](#Modelo-de-Domínio)
+   * [Diagrama de Classe](#Diagrama-de-Classe)
+   * [Diagrama de Objetos](#Diagrama-de-Objetos)
+   * [Diagrama de Sequência](#Diagrama-de-Sequência)
+   * [Diagrama de atividade](#Diagrama-de-atividade)
+   * [Diagrama de estado](#Diagrama-de-estado)
+   * [Diagrama do banco de dados](#Diagrama-do-banco-de-dados)
+   * [Product Backlog Building](#Product-Backlog-Building)
+   * [Use story](#Use-story)
+ - [Desenvolvedore]
 
 
 # Tecnologias utilizadas 
@@ -73,7 +83,7 @@ Promovendo facilitar o encontro entre psicólogos e pacientes, MyMind permitirá
 ![image](https://user-images.githubusercontent.com/65619277/180833793-dc802eda-5441-40ff-8b32-c73c846cb6b0.png)
 ![image](https://user-images.githubusercontent.com/65619277/180833802-7bb2ed99-3be8-4ebd-ac8b-34d7bfc510e1.png)
 
-## Diagrama do bando de dados
+## Diagrama do banco de dados
 ![DRGbancoDeDadosMymind](https://user-images.githubusercontent.com/65619277/180834531-8ec6e339-92aa-4fb9-bd3e-a95c4780d055.png)
 
 ## Product Backlog Building
@@ -83,7 +93,11 @@ Promovendo facilitar o encontro entre psicólogos e pacientes, MyMind permitirá
 ![UserStoryCadastrarPsicologo](https://user-images.githubusercontent.com/65619277/180834970-64752214-8f0d-4bd0-8c4c-99c335813bed.jpg)
 
 
-
+# Desenvolvedores
+* [André Delfino](#https://github.com/DehDelfino)
+* [Fernando Dias](#https://github.com/FernandoDias18))
+* [Giulia Carvalho](#https://github.com/GiuliaCarvalhoS))
+* [Lucas Eskudlark](#https://github.com/LucasEskudlark))
 
 
 

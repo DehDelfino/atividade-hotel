@@ -4,10 +4,10 @@
 </br>
 
 # indice:
-- [Tecnologias](#-Tecnologias-utilizadas)
+- [Tecnologias](#Tecnologias-utilizadas)
 
 - [Justificativa do projeto](#-Justificativa-do-projeto)
-- [Beneficios](#-Beneficios)
+- [Beneficios](#Beneficios)
 
 
 # Tecnologias utilizadas 

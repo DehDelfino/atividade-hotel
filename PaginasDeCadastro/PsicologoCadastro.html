@@ -29,22 +29,18 @@
               <a href="../PaginasDeCadastro/PsicologoCadastro.html" class="mdl-navigation__link">Cadastro</a>
               <a href="../PaginaApagarCadastro/Apagarcadastropsic.html" class="mdl-navigation__link">Apagar dados </a>
               <a href="../PaginaAlterarDados/PsicologoAlterarDados.html" class="mdl-navigation__link" >Alterar dados </a>
-              <a href="../PaginaBuscarPsicologo/BuscarPsicologo.html" class="mdl-navigation__link">Buscar Psicologo</a>
-              <a href="../PaginaFeed/FeedPsicologo.html" class="mdl-navigation__link">Feed</a> 
             </nav>
           </div>   
       </div>
     </header>
     <!--MEXER LINKS E-->
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">MyMind</span>
+      <span class="mdl-layout-title">Hotel Araucaria</span>
         <nav class="mdl-navigation">
           <a href="../index.html" class="mdl-navigation__link">Inicio</a>
           <a href="../PaginasDeCadastro/PsicologoCadastro.html" class="mdl-navigation__link">Cadastro</a>
           <a href="../PaginaApagarCadastro/Apagarcadastropsic.html" class="mdl-navigation__link" >Apagar dados </a>
           <a href="../PaginaAlterarDados/PsicologoAlterarDados.html" class="mdl-navigation__link" >Alterar dados </a>
-          <a href="../PaginaBuscarPsicologo/BuscarPsicologo.html" class="mdl-navigation__link">Buscar Psicologo</a>
-          <a href="../PaginaFeed/FeedPsicologo.html" class="mdl-navigation__link">Feed</a> 
         </nav>
     </div>
       <main >
@@ -52,7 +48,7 @@
             <form class="form-horizontal" >
               <fieldset>
                   <div class="panel panel-primary">
-                      <div class="panel-heading" id="titulo">Cadastro de Psicólogo</div>
+                      <div class="panel-heading" id="titulo">Cadastro de Quartos</div>
                       <div class="panel-body">
                   <div class="form-group">
                   <div class="col-md-11 control-label">
@@ -61,233 +57,54 @@
 
                   <!-- Text input-->
                   <div class="form-group">
-                    <label class="col-md-2 control-label" for="Nome">Nome completo <h11>*</h11></label>  
-                    <div class="col-md-8">
-                      <span id='erro-nome'>
-                        *Tenha certeza de ter digitado um nome com mais de uma letra e sem números
-                      </span>
-                      <input id="nomeCompleto" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-                  </div>
-                  </div>
-                  <div class="form-group" id="form-group">
-                    <label class="col-md-2 control-label" for="Data Nascimento">Data de Nascimento</label>  
-                    <div class="col-md-2">
-                      <span id='erro-data'>
-                        *Parece que a data que você digitou não é valida. Tente dia/mês/ano
-                      </span>
-                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10">
-                  </div>
-                  
-                  <!-- Multiple Radios (inline) -->
-                  <div class="form-group"></div>
-                    <label class="col-md-2 control-label" for="radios">Sexo <h11>*</h11></label>
-                      <div class="col-md-4"> 
-                        <label required="" class="radio-inline" for="radios-0" >
-                          <input name="sexo" id="sexo" value="feminino" type="radio" required>
-                          Feminino
-                        </label> 
-                        <label class="radio-inline" for="radios-1">
-                          <input name="sexo" id="sexo" value="masculino" type="radio">
-                          Masculino
-                        </label>
-                        <label class="radio-inline" for="radios-0">
-                          <input name="sexo" id="sexo" value="outro/prefiro não informar" type="radio">
-                          Outro/Prefiro não informar
-                        </label>
-                      </div>
-                    </label>
-                  </div>
-                  
-                  <!-- Prepended text-->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-                    <div class="col-md-2">
+                    <label class="col-md-2 control-label" for="Nome">Número do Quarto<h11>*</h11></label>  
+                    <div class="col-md-3">
                       <span id='erro-numero'>
-                        *Parece que o número que você digitou não é valida. Tente (dd) x xxxx-xxxx
+                        *Tenha certeza de ter digitado um número
                       </span>
-                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                        <input id="telefone" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$">
-                      </div>
-                    </div>
+                      <input id="numeroQuarto" name="numero" placeholder="" class="form-control input-md" required="" type="text">
                   </div>
-                  
-                  <!-- Prepended text-->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
-                    <div class="col-md-5">
-                      <span id='erro-email'>
-                        *Parece que o email que você digitou não é valida
-                      </span>
-                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input id="email" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text"  >
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <!-- Search input-->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="cpf">CPF (Cadastro de Pessoa Física) <h11>*</h11></label>
-                    <div class="col-md-2">
-                      <span id='erro-cpf'>
-                        *Parece que o CPF que você digitou não é valida tente sem pontos ou traços
-                        ex: xxxxxxxxxxx
-                      </span>
-                      <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('##/###.###', this)">
-                    </div>
-                  </div>                  
-
-                  <!-- Search input-->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="Crp">CRP (Conselho Regional de Psicologia)<h11>*</h11></label>
-                    <div class="col-md-2">
-                      <span id='erro-crp'>
-                        *Parece que o CRP que você digitou não é valida tente sem pontos ou traços
-                        ex: xxxxxxx
-                      </span>
-                      <input id="crp" name="crp" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$" OnKeyPress="formatar('######-##', this)">
-                    </div>
-                  </div>    
-
-                  <!-- Search input-->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="e-Psi">Link e-Psi<h11>*</h11></label>
-                    <div class="col-md-2">
-                      <span id='erro-link'>
-                        *Parece que o Link e-Psi está incorreto
-                      </span>
-                      <input id="link" name="Link" placeholder="" class="form-control input-md" required="" type="search" maxlength="15">
-                    </div>
                   </div>
 
+                  <!-- Text input-->
                   <div class="form-group">
-                    <label class="col-md-2 control-label" for="Cep">CEP<h11>*</h11></label> 
-                    <div class="col-md-2">
-                      <span id='erro-cep'>
-                        *Parece que o CEP está incorreto tente sem pontos e traços
-                        ex: xxxxxxxx
-                      </span>
-                      <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$" OnKeyPress="formatar('######-###', this)">
-                    </div>
-                </div>
-  
-              
-                
-  
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="Cidade">Cidade<h11>*</h11></label> 
+                    <label class="col-md-2 control-label" for="Nome">Andar do Quarto<h11>*</h11></label>  
                     <div class="col-md-3">
-                      <span id='erro-cidade'>
-                        *Parece que a cidade está incorreta
+                      <span id='erro-andar'>
+                        *Tenha certeza de ter digitado um número
                       </span>
-                      <input id="cidade" name="cidade"placeholder="" class="form-control input-md" required="" type="text">
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                  <label class="col-md-2 control-label" for="Bairro">Bairro<h11>*</h11></label> 
-                  <div class="col-md-2">
-                    <span id='erro-bairro'>
-                      *Parece que o bairro está incorreto
-                    </span>
-                    <input id="bairro" name="bairro" placeholder="" class="form-control input-md" required="" type="text">
+                      <input id="andar" name="andar" placeholder="" class="form-control input-md" required="" type="text">
                   </div>
-              </div>
-  
-   
-                <div class="form-group">
-                        <label class="col-md-2 control-label" for="Rua">Rua<h11>*</h11></label> 
-                        <div class="col-md-6">
-                          <span id='erro-rua'>
-                            *Parece que a rua está incorreta
-                          </span>
-                          <input id="rua" name="rua" placeholder="" class="form-control input-md" required="" type="text">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-md-2 control-label" for="numero">Numero <h11>*</h11></label>
-                      <div class="col-md-2">
-                        <span id='erro-numeroclinica'>
-                          *Parece que o número está incorreto
-                        </span>
-                        <input id="numeroclinica" name="numero" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="4" pattern="[0-9]+$" OnKeyPress="formatar('####', this)">
-                      </div>
-                    </div>        
-             
-                <div class="form-group">
-                    <label class="col-md-2 control-label" for="Completo">Complemento</label> 
-                    <div class="col-md-2">
-                      <input id="complemento" name="complemento" placeholder="" class="form-control input-md" type="text">
-                    </div>
-                </div>
-  
-  
-                <div class="form-group">
-                  <label class="col-md-2 control-label" for="Completo">Instituição de formção<h11>*</h11></label> 
-                  <div class="col-md-6">
-                    <span id='erro-instituicao'>
-                      *Parece que a instituição de formação o está incorreta
-                    </span>
-                    <input id="instituiçãoDeFormção" name="instituiçãoDeFormção" placeholder="" class="form-control input-md" type="text">
                   </div>
-              </div>
-        
-                  <!-- Select Basic -->
+
+                  <!-- Text input-->
                   <div class="form-group">
-                    <label class="col-md-2 control-label" for="anoDeFormacao">Ano de formação <h11>*</h11></label>
-                    <div class="col-md-2">
-                      <span id='erro-ano'>
-                        *Parece que o ano de formação está incorreto
-                      </span>
-                      <input id="anoDeFormacao" name="anoDeFormacao" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('###.###.###-##', this)">
-                    </div>
-                  </div>
-                  
-                  <!-- Select Basic -->
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="selectbasic"> Como soube do app MyMind? <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="Nome">Quantidade de Camas<h11>*</h11></label>  
                     <div class="col-md-3">
-                      <select required id="Como soube do app MyMind? " name="Como soube do app MyMind? " class="form-control">
-                      <option value=""></option>
-                        <option value="Google">Google</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Indicação de Profissionais da área">Indicação de Profissionais da área</option>
-                        <option value="Indicação de Amigos ">Indicação de Amigos</option>
-                        <option value="Jornal">Jornal</option>
-                        <option value="Rádio">Rádio</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="Usuario">Usuário <h11>*</h11></label>  
-                    <div class="col-md-2">
-                      <span id='erro-usuario'>
-                        *Parece que o usuário está incorreto
+                      <span id='erro-camas'>
+                        *Tenha certeza de ter digitado um número
                       </span>
-                      <input id="usuario" name="usuario" placeholder="" class="form-control input-md" required="" type="text">
-                    </div>
+                      <input id="camas" name="camas" placeholder="" class="form-control input-md" required="" type="text">
                   </div>
-
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="Senha">Senha <h11>*</h11></label>  
-                    <div class="col-md-2">
-                      <input id="senha" name="senha" placeholder="" class="form-control input-md" required="" type="password">
-                    </div>
-                    <label class="col-md-2 control-label" for="ConfSenha">Confirmar Senha <h11>*</h11></label> 
-                    <div class="col-md-2">
-                     <input id="confSenha" name="confSenha" placeholder="" class="form-control input-md" required="" type="password">
-                    </div>
                   </div>
-
-                  <div class="form-check">
-                    <input class="" type="checkbox" value="" id="flexCheckIndeterminate">
-                    <label class="form-check-label" for="flexCheckIndeterminate">
-                      Li e concordo com os Termos de Uso
-                    </label>
-                  </div>
+           
+                  
+                  
+                 <!-- Multiple Radios (inline) -->
+                 <div class="form-group"></div>
+                 <label class="col-md-2 control-label" for="radios">Disponibilidade<h11>*</h11></label>
+                   <div class="col-md-4"> 
+                     <label required="" class="radio-inline" for="radios-0" >
+                       <input name="disponibilidade" id="sexo" value="disponível" type="radio" required>
+                       Disponível
+                     </label> 
+                     <label class="radio-inline" for="radios-1">
+                       <input name="disponibilidade" id="sexo" value="indisponível" type="radio" disabled>
+                       Indisponível
+                     </label>
+                   </div>
+                 </label>
+               </div>
 
                 </form>
                   <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
@@ -304,51 +121,7 @@
       </footer>
     </div>
 
-    <div id="login">
-      <div class="centralizar" >
-        <div class="container-login">
-          <span class="txtlogin">Login</span>
-          <img src="../../../assets/close.png" alt="close" class="close-button" id="close-button">
-        </div>
-      
-        <form action="POST">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample1">
-            <label class="mdl-textfield__label" for="sample1">Usuario</label>
-          </div>
-        </form>
-        <span class="txtlogin">Senha:</span>
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="password" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-              <label class="mdl-textfield__label" for="sample2">Senha</label>
-              <span class="mdl-textfield__error">Opa, senha inválida, Tente Novamento!</span>
-          </div>
-        </form>
-      
-          <label class="container" id="txt-lembrarSenha">Lembrar minha conta
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-          
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-entrar">
-              Acessar
-          </button>
-  
-          <a href="#">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-cadastrar">
-              Cadastrar-se
-          </button>
-          </a>
-
-          <a href="./esquecer.html">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-esquecer">
-              Esqueceu sua senha?
-            </button>
-          </a>
-      
-      </div>
-    </div>
+       </div>
 
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script type="module" src="./scripts/estagiario.js"></script>
@@ -361,48 +134,17 @@
     event.preventDefault()
 
     
-    const url = "http://127.0.0.1:3333/psicologos"
-    const nome =  document.getElementById('nomeCompleto').value
-    const nascimento =  document.getElementById('dtnasc').value
-    const telefone =  document.getElementById('telefone').value
-    const email =  document.getElementById('email').value
-    const cpf =  document.getElementById('cpf').value
-    const cidade =  document.getElementById('cidade').value
-    const rua =  document.getElementById('rua').value
-    const bairro =  document.getElementById('bairro').value
-    const cep =  document.getElementById('cep').value
-    const crp =  document.getElementById('crp').value 
-    const link =  document.getElementById('link').value
-    const numero =  document.getElementById('numeroclinica').value
-    const ano =  Number(document.getElementById('anoDeFormacao').value)
-    const usuario =  document.getElementById('usuario').value
-    const complemento =  document.getElementById('complemento').value
-    const senha =  document.getElementById('senha').value
-    const instituicao =  document.getElementById('instituiçãoDeFormção').value
-  
-  
-  
+    const url = "http://127.0.0.1:3333/quartos"
+    const numeroQuarto =  Number(document.getElementById('numeroQuarto').value)
+    const andar =  Number(document.getElementById('andar').value)
+    const camas =  Number(document.getElementById('camas').value)
+    
+
+    
     const body = {
-      "nome": nome,
-      "dataNascimento": nascimento,
-      "telefone": telefone,
-      "email": email,
-      "cpf": cpf,
-      "cidade": cidade,
-      "cep": cep,
-      "rua": rua,
-      "bairro": bairro,
-      "numero": numero,
-      "complemento": complemento,
-      "email": email,
-      "crp": crp,
-      "linkEpsi": link,
-      "anoDeFormacao": ano,
-      "nomeUsuario": usuario,
-      "senhaUsuario": senha,
-      "instituicaoEnsino": instituicao
-
-
+      "quantidade_de_cama": camas,
+      "numero": numeroQuarto,
+      "andar": andar
     }
     
     
